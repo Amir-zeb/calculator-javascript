@@ -1,33 +1,91 @@
-.grid-container {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: auto auto auto;
-    background-color:rgba(255, 231, 11, 0.8);
-    padding: 10px;
-    border-radius: 10px;
-    margin:auto;
-}
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 1);
-    border-radius: 10px;
-    font-size: 30px;
-    text-align: center;
-}
-.item1{
-    grid-column: 1/span1;
-    border-radius: 10px;
+*{
+    /* border: 1px solid black; */
+    padding: 0;
+    margin: 0;
 }
 body{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("1.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img/calimg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
-
 }
-@media only screen and (min-width: 842px) {
-    .grid-container{
-        width: 50%;
-    }
-  }
+/* .cal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 330px;
+} */
+input{
+    text-align: end;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(41, 39, 39);
+    border:rgb(41, 39, 39);
+    color: white;
+    padding: 0 10px 0 0 !important;
+    font-size: 30px !important;
+}
+.name-area{
+    background-color: rgba(255, 255, 255, 0.507);
+}
+.btn-area1{
+    background-color: rgb(4, 160, 250) !important;
+    padding:0 !important;
+    margin: 0 !important;
+}
+.btn-area2{
+    background-color: rgb(255, 255, 255) !important;
+    padding:0 !important;
+    margin: 0 !important;
+}
+.cal-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 2px 10px 2px 10px !important;
+    background-color: rgb(0, 95, 238);
+    color: rgb(255, 255, 255);
+}
+.cal-btn:hover{
+    box-shadow:5px 5px 5px rgba(0,0,0,0.5);
+}
+.cal-btn2{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    margin: 2px 0px 2px 0px !important;
+}
+.cal-btn2:hover{
+    font-size: 25px;
+}
+a{
+    color: white !important;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    position:absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+}  
+@media only screen and (min-width: 660px) {
+    .cal{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 330px;
+    }   
+ 
+}
+@media only screen and (max-width: 660px) {
+    .cal{
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 330px;
+    } 
+}
